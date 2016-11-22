@@ -1,0 +1,10 @@
+#!/usr/bin/python
+from pgdump import pg_dump
+
+host='hostname'
+user='username'
+db='dbname'
+bucket='s3://s3-bucket-to-upload-dump'
+if __name__=='__main__':
+   dump=pg_dump(host,user,db,bucket)
+   dump.db_dump()
