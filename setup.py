@@ -1,4 +1,4 @@
-from setuptools import setup
+hosfrom setuptools import setup
 
 setup(name='pgdump',
       version='0.1',
